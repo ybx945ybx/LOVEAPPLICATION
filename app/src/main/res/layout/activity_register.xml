@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorGrayF0F0F0"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayF0F0F0"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/alphaWhite">
+
+            <ImageView
+                android:id="@+id/headerLeftImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:padding="8dp"
+                android:src="@mipmap/ic_left"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/headerLeftImg"
+                android:text="注册"
+                android:textColor="@color/colorGray333333"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray333333"/>
+
+    </LinearLayout>
+
+    <!-- 大号 -->
+    <RelativeLayout
+        android:id="@+id/rlyt_head"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@color/colorWhite"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="用户头像"
+            android:textColor="@color/colorGray333333"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_arrow_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow_right_small"/>
+
+        <!-- 优惠券数 -->
+        <kyf.loveapplication.ui.view.LoveImageView
+            android:id="@+id/iv_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/img_arrow_1"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:failureImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundedCornerRadius="3dp"/>
+        <!--fresco:roundAsCircle="true"-->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayF0F0F0"/>
+
+    <!-- 小号 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@color/colorWhite"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="小号头像"
+            android:textColor="@color/colorGray333333"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_arrow_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow_right_small"/>
+
+        <kyf.loveapplication.ui.view.LoveImageView
+            android:id="@+id/iv_second_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/img_arrow_2"/>
+
+    </RelativeLayout>
+
+    <kyf.loveapplication.ui.view.LoveEditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorWhite"
+        android:gravity="right"
+        app:bottom_line_visible="false"
+        app:edit_hit_txt="昵称"
+        app:edit_hit_txt_color="@color/colorGray9E9E9E"
+        app:edit_txt_color="@color/colorGray9E9E9E"
+        app:left_txt="主号昵称"
+        app:right_img="@mipmap/ic_arrow_right_small"/>
+
+
+    <!--</kyf.loveapplication.ui.view.LoveEditText>-->
+
+    <RelativeLayout
+        android:id="@+id/llyt_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"  >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:minWidth="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray333333"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="地区"/>
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColor="@color/colorGray9E9E9E"
+                android:textColorHint="@color/colorGray333333"
+                android:textSize="16sp"
+                 android:text="上海市"
+                android:gravity="right"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@mipmap/ic_arrow_right_small"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<kyf.loveapplication.ui.view.LoveEditText-->
+            <!--android:id="@+id/et_province"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="46dp"-->
+            <!--android:background="@color/colorWhite"-->
+            <!--android:gravity="right"-->
+            <!--app:bottom_line_visible="false"-->
+            <!--app:edit_hit_txt="上海市"-->
+            <!--app:edit_hit_txt_color="@color/colorGray9E9E9E"-->
+            <!--app:edit_txt_color="@color/colorGray9E9E9E"-->
+            <!--app:left_txt="地区"-->
+            <!--app:right_img="@mipmap/ic_arrow_right_small"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></RelativeLayout>
+    </RelativeLayout>
+    <kyf.loveapplication.ui.view.LoveEditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/colorWhite"
+        app:bottom_line_visible="false"
+        app:edit_hit_txt="请输入手机号"
+        app:edit_hit_txt_color="@color/colorGray9E9E9E"
+        app:edit_txt_color="@color/colorGray9E9E9E"
+        app:left_txt="+86"
+        app:right_txt="获取验证码"/>
+    <kyf.loveapplication.ui.view.LoveEditText
+        android:id="@+id/et_second_name"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/colorWhite"
+        android:gravity="right"
+        android:visibility="gone"
+        app:bottom_line_visible="false"
+        app:edit_hit_txt="昵称"
+        app:edit_hit_txt_color="@color/colorGray9E9E9E"
+        app:edit_txt_color="@color/colorGray9E9E9E"
+        app:left_txt="小号昵称"
+        app:right_img="@mipmap/ic_arrow_right_small"/>
+
+    <kyf.loveapplication.ui.view.LoveEditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/colorWhite"
+        app:bottom_line_visible="false"
+        app:edit_hit_txt="请输入验证码"
+        app:edit_hit_txt_color="@color/colorGray9E9E9E"
+        app:edit_txt_color="@color/colorGray9E9E9E"
+        app:left_txt="获取验证码"/>
+
+    <kyf.loveapplication.ui.view.LoveEditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/colorWhite"
+        app:bottom_line_visible="false"
+        app:edit_hit_txt="请输入密码"
+        app:edit_hit_txt_color="@color/colorGray9E9E9E"
+        app:edit_txt_color="@color/colorGray9E9E9E"
+        app:left_txt="密码"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_round_corner_blue"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llyt_aggre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击注册按钮即表示您同意"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="《用户协议用户条款等相关协议条款》"
+                android:textColor="@color/colorBlue43ABFF"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

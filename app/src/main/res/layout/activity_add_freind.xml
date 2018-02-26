@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayF0F0F0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayF0F0F0"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/alphaWhite">
+
+            <ImageView
+                android:id="@+id/headerLeftImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:padding="8dp"
+                android:src="@mipmap/ic_left"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/headerLeftImg"
+                android:text="添加新朋友"
+                android:textColor="@color/colorGray333333"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray333333"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ic_phone_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="添加手机联系人"
+        android:textColor="#5a5a5a"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_add_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ic_record_orange"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="添加朋友记录"
+        android:textColor="#5a5a5a"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_corner_ffffff"
+            android:hint="输入昵称/微信/QQ/手机"
+            android:padding="10dp"
+            android:textColorHint="#bbbbbb"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_search_blue"
+            android:drawableLeft="@mipmap/ic_search_white"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <!--搜索结果-->
+    <RelativeLayout
+        android:id="@+id/rlyt_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="48dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="救赎"
+                    android:textColor="#656565"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/ic_femal"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="我是一个开心的石头"
+                android:textColor="#8e8e8e"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_round_corner_f5f5f5"
+                android:hint="发送验证消息"
+                android:padding="10dp"
+                android:textColorHint="#969696"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp">
+
+                <TextView
+                    android:id="@+id/tv_send_message"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="发消息"
+                    android:textColor="@color/colorBlue43ABFF"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="35dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_round_corner_blue_border"/>
+
+                <TextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_round_corner_blue"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="35dp"
+                    android:paddingTop="10dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="10dp"
+                    android:text="+ 添加"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <kyf.loveapplication.ui.view.LoveImageView
+            android:id="@+id/iv_head"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_centerHorizontal="true"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:failureImageScaleType="centerCrop"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundedCornerRadius="3dp"/>
+
+    </RelativeLayout>
+
+    <!--搜索无结果-->
+    <TextView
+        android:id="@+id/tv_search_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="40dp"
+        android:text="该用户不存在"
+        android:textColor="@color/colorGray9E9E9E"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+</LinearLayout>

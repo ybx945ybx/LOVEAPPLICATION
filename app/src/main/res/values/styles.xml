@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!-- 加载中Dialog -->
+    <style name="ProgressDialog" parent="android:style/Theme.Dialog">
+        <!-- 设置自定义布局的背景透明 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 设置window背景透明，也就是去边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置Activity背景是否变灰 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--首页RadioButton样式-->
+    <style name="center_radio_btn_style">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/center_radiobtn_txt_color</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

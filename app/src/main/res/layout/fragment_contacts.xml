@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llyt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayF9F9F9"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_corner_e9e9e9"
+            android:drawableLeft="@mipmap/ic_search"
+            android:hint=" 搜索"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:textColorHint="#bbbbbb"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@mipmap/ic_cicle_black"/>
+    </LinearLayout>
+
+    <!--<include-->
+        <!--android:id="@+id/layout_head"-->
+        <!--layout="@layout/contacts_head"/>-->
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <kyf.loveapplication.ui.view.PinnedHeaderListView
+            android:id="@+id/pinnerListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"/>
+
+        <kyf.loveapplication.ui.view.EasyRecyclerViewSidebar
+            android:id="@+id/section_sidebar"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|end"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            app:easySidebarFontColor="@color/colorGray26241F"/>
+
+        <TextView
+            android:id="@+id/section_floating_tv"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="1212"
+            android:textColor="#ff444444"
+            android:textSize="23sp"
+            android:visibility="invisible"/>
+
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rycv_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+    </RelativeLayout>
+</LinearLayout>

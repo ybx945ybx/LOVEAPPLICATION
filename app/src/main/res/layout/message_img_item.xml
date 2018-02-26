@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="25dp"
+              android:paddingRight="25dp">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorGray9A9A9A"
+
+        android:textSize="12sp"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/leftLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+
+        <kyf.loveapplication.ui.view.LoveImageView
+            android:id="@+id/leftImage"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            fresco:roundedCornerRadius="3dp"/>
+
+        <kyf.loveapplication.ui.view.LoveImageView
+            android:id="@+id/leftContent"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@+id/leftImage"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/bg_round_corner_ffffff"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="visible">
+
+
+        <kyf.loveapplication.ui.view.LoveImageView
+            android:id="@+id/rightImage"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            fresco:roundedCornerRadius="3dp"
+            android:layout_alignParentRight="true"/>
+
+        <kyf.loveapplication.ui.view.LoveImageView
+            android:id="@+id/rightContent"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/rightImage"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/bg_round_corner_ffffff"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/no_network_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_page_no_newtork_logo"/>
+
+    <!-- 提示信息 -->
+    <kyf.loveapplication.ui.view.LoveTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/network_not_good"
+        android:textColor="@color/colorGray999999"
+        android:textSize="16sp"/>
+
+    <!-- 重新加载 -->
+    <kyf.loveapplication.ui.view.LoveTextView
+        android:id="@+id/no_network_retry_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_reload"
+        android:text="@string/reload"
+        android:textColor="@color/colorGray999999"
+        android:textSize="16sp"/>
+</LinearLayout>

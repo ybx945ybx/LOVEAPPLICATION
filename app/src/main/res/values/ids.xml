@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="content_view" type="id"/>
+
+    <item name="tag_for_img" type="id"/>
+    <item name="tag_for_position" type="id"/>
+    <item name="tag_for_item" type="id"/>
+    <item name="tag_for_img_param" type="id"/>
+</resources>

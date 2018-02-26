@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoveApplication</string>
+
+    <string name="love_loading">正在加载...</string>
+    <string name="empty">空空如也</string>
+    <string name="empty_view_info">这里目前什么都没有啊</string>
+    <string name="server_error_retry_later">服务器异常，请稍后再试</string>
+    <string name="reload">重新加载</string>
+    <string name="network_not_good">咦，网络状态不佳哦~</string>
+
+</resources>

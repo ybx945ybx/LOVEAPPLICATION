@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!--预览-->
+    <SurfaceView
+        android:id="@+id/camera_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <!--关闭按钮-->
+            <ImageButton
+                android:id="@+id/ib_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="8dp"
+                android:src="@mipmap/ic_left"
+                android:visibility="visible"/>
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="@string/scan_card"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/text_size_larges"/>-->
+
+        </RelativeLayout>
+        <!--拍摄按钮-->
+        <View
+            android:id="@+id/btn_take_picture"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_above="@+id/view_bottom"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/take_picture_circle"/>
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_above="@+id/view_bottom"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@id/btn_take_picture"
+            android:src="@mipmap/ic_left"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_above="@+id/view_bottom"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/btn_take_picture"
+            android:src="@mipmap/ic_select"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

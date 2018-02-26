@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayF0F0F0"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/alphaWhite">
+
+            <ImageView
+                android:id="@+id/headerLeftImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:padding="8dp"
+                android:src="@mipmap/ic_left"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/headerLeftImg"
+                android:text="登录"
+                android:textStyle="bold"
+                android:textColor="@color/colorGray333333"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray333333"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国家/地区"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray333333"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_select_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_round_corner_boder"
+            android:drawablePadding="6dp"
+            android:drawableRight="@mipmap/ic_triangle_down"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="中国"
+            android:textColor="@color/colorGrayA6A6A6"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/colorGrayF0F0F0"/>-->
+
+    <kyf.loveapplication.ui.view.LoveEditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:top_txt="账号"
+        app:edit_hit_txt="账号/微信/QQ"/>
+
+    <kyf.loveapplication.ui.view.LoveEditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:top_txt="密码"
+        app:edit_hit_txt="请输入密码"
+        app:right_img="@mipmap/ic_pass_word_show"
+        android:inputType="textPassword"/>
+    
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_round_corner_blue"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_to_code_login"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_round_corner_solid_white_stroke_blue"
+        android:gravity="center"
+        android:text="短信验证码登录"
+        android:textColor="@color/colorBlue43ABFF"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorGrayA6A6A6"
+        android:textStyle="bold"
+        android:text="注册 >"
+        android:padding="10dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

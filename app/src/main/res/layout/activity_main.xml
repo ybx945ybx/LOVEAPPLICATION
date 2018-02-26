@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/contain_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdo_prorelation"
+            style="@style/center_radio_btn_style"
+            android:drawableTop="@drawable/center_radiobtn_prorelation"
+            android:text="首页"/>
+
+        <RadioButton
+            android:id="@+id/rdo_community"
+            style="@style/center_radio_btn_style"
+            android:drawableTop="@drawable/center_radiobtn_community"
+            android:text="社区"/>
+
+        <RadioButton
+            android:id="@+id/rdo_chat"
+            style="@style/center_radio_btn_style"
+            android:drawableTop="@drawable/center_radiobtn_chat"
+            android:text="联信"/>
+
+        <RadioButton
+            android:id="@+id/rdo_contact"
+            style="@style/center_radio_btn_style"
+            android:drawableTop="@drawable/center_radiobtn_contact"
+            android:text="通讯录"/>
+
+        <RadioButton
+            android:id="@+id/rdo_me"
+            style="@style/center_radio_btn_style"
+            android:drawableTop="@drawable/center_radiobtn_me"
+            android:text="我"/>
+
+    </RadioGroup>
+</LinearLayout>

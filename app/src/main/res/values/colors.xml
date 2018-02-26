@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorGrayCCCCCC</color>
+    <color name="colorPrimaryDark">@color/colorDark</color>
+    <color name="colorAccent">#333</color>
+
+    <color name="alphaWhite">#99FFFFFF</color>
+    <color name="alphaDark">#b2000000</color>
+    <!-- 白色 -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransWhite">#00FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="colorBlack">#000000</color>
+    <color name="colorDark">#26241F</color>
+    <!-- 透明 -->
+    <color name="colorClear">#00FFFFFF</color>
+
+
+
+    <!-- 灰阶色彩 -->
+    <color name="colorGray333333">#333333</color>
+    <color name="colorGray757575">#757575</color>
+    <color name="colorGrayA6A6A6">#A6A6A6</color>
+    <color name="colorGrayB1B1B1">#B1B1B1</color>
+    <color name="colorGrayABABAB">#ABABAB</color>
+    <color name="colorGrayC6C6C6">#C6C6C6</color>
+    <color name="colorGray9E9E9E">#9E9E9E</color>
+    <color name="colorGrayF0F0F0">#F0F0F0</color>
+    <color name="colorGrayF9F9F9">#F9F9F9</color>
+    <color name="colorGrayE9E9E9">#E9E9E9</color>
+    <color name="colorGray7FA6C5">#7fa6c5</color>
+    <color name="colorGray9A9A9A">#9A9A9A</color>
+    <!-- 蓝色 -->
+    <color name="colorBlue43ABFF">#43ABFF</color>
+    <!--红色-->
+    <color name="colorRedF46666">#F46666</color>
+
+
+
+
+
+
+
+
+
+    <color name="colorGray26241F">#26241F</color>
+    <color name="colorGray666666">#666666</color>
+    <color name="colorGray979797">#979797</color>
+    <color name="colorGray999999">#999999</color>
+    <color name="colorGrayCCCCCC">#CCCCCC</color>
+    <color name="colorGrayFAFAFA">#FAFAFA</color>
+    <color name="colorGrayD9D9D9">#D9D9D9</color>
+    <color name="colorGrayE5E5E5">#E5E5E5</color>
+    <color name="colorGrayEAEAEA">#EAEAEA</color>
+    <color name="colorGrayE6E6E6">#E6E6E6</color>
+    <color name="colorGrayF5F5F5">#F5F5F5</color>
+    <color name="colorGrayF3F3F9">#F3F3F9</color>
+    <color name="colorGray23231E">#23231E</color>
+    <color name="colorGrayF8F8F8">#F8F8F8</color>
+    <color name="colorGrayIndicator">#383631</color>
+    <!-- 紫色 -->
+    <color name="colorPurple">#F3F3F9</color>
+    <!-- 红色 -->
+    <color name="colorRed">#E63956</color>
+    <color name="colorRedED1A3A">#ED1A3A</color>
+    <color name="colorRedEE1741">#EE1741</color>
+    <color name="colorRedDB001C">#DB001C</color>
+    <!-- 橘红 -->
+    <color name="colorJacinth">#F23524</color>
+    <!-- 橙黄色(黄色系) -->
+    <color name="colorOrange">#FFAA00</color>
+    <!-- 香蕉黄(黄色系) -->
+    <color name="colorBanana">#FFCC40</color>
+    <!-- 柠檬黄(黄色系) -->
+    <color name="colorLemon">#FFD401</color>
+    <color name="colorOrangeFFFBF0">#FFFBF0</color>
+    <!-- 绿色(iOS按钮绿) -->
+    <color name="colorGreen">#00D76E</color>
+
+    <!-- 80%透明黑 -->
+    <color name="colorBlur80">#CC000000</color>
+
+    <!-- 60%透明黑 -->
+    <color name="colorBlur60">#99000000</color>
+
+    <!-- 50%透明黑 -->
+    <color name="colorBlur50">#7F000000</color>
+
+    <!-- 40%透明黑 -->
+    <color name="colorBlur40">#66000000</color>
+
+    <!-- 100%透明黑 -->
+    <color name="colorBlur100">#00000000</color>
+
+    <!-- tab高亮背景颜色 -->
+    <color name="colorTabSelected">@color/colorDark</color>
+    <color name="colorTabTxt">#999</color>
+    <color name="colorTab">#333</color>
+
+    <!-- 普通分割线颜色 -->
+    <color name="colorDivider">#E6E6E6</color>
+
+    <!-- ListView分割线颜色 -->
+    <color name="colorLvDivider">@color/colorActivityBackground</color>
+
+    <!-- 下拉刷新颜色 -->
+    <color name="color_swipe">#666</color>
+
+    <!-- 页面背景颜色 -->
+    <color name="colorActivityBackground">#F3F3F9</color>
+    <!--<color name="colorActivityBackground">#F0F0F8</color>-->
+
+    <!-- hint字颜色 -->
+    <color name="colorHint">#CCCCCC</color>
+
+    <!-- 个人中心 红色字体 -->
+    <color name="colorRedMyAccount">#ee1741</color>
+
+    <!-- 黄色字体颜色 -->
+    <color name="colorTextYellow">@color/colorOrange</color>
+
+    <!-- 点赞按钮颜色 -->
+    <color name="spark_button_primary_color">#e16e7f</color>
+    <color name="spark_button_secondary_color">#dd3a53</color>
+
+    <!-- 积分颜色 -->
+    <color name="membership_point_plus">#FFAA00</color>
+    <color name="membership_point_minus">#999999</color>
+
+    <color name="colorC8C8C8">#C8C8C8</color>
+
+    <!-- 客服图标颜色 -->
+    <color name="colorIcService">#FA8800</color>
+
+    <!-- 订单状态 - 橙色 -->
+    <color name="order_orange">#FA8800</color>
+
+    <!-- 删除按钮颜色 -->
+    <color name="colorDeleteButton">#D0011B</color>
+
+    <!-- 订单详情页 Head提示信息 文字颜色 -->
+    <color name="orderDetailHeaderInfoBg">#FFF5CF</color>
+    <!-- 订单详情页 Head提示信息 文字背景 -->
+    <color name="orderDetailHeaderInfoText">#FA8800</color>
+
+</resources>
